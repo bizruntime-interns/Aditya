@@ -1,0 +1,79 @@
+Why to learn Operating system??
+Operating System is a interface between the computer user and the computer hardware.Operating system does many 
+task like 
+1.Memory management
+2.Process management
+3.Device management
+4.File management
+5.Security
+6.Control over system performance
+7.Job accounting
+8.Error detecting aids
+
+
+---Batch Processing
+
+Batch processing is a Technique where Operating system collects both program and the data together in 
+a batch before processing start.
+
+---Multi Tasking is when a system is executing 2 or 3 program together by switching from one program to other.
+
+
+---Schedulers
+
+Schedulers are basically special system software where it decides which job to assign to the system
+and decide which process to run.
+
+They are of 3 types:
+Short term schedular 
+Long term schedular
+Also called job schedular.it select the process from the queue and load them into memory
+for execution.
+Medium term schedular
+
+
+Firstly we have our operating system,under this operating system we have process.. 
+where all the appliction are run by these processes
+processes use the concepts of thread to run code in thr application.
+
+Thread: A thread is a unit which execute the code under application.It is also responsiable to execute 
+the logic into ur appication. By deafult every application is a single threaded modle ...coz it contains a 
+single thread by default and that is called the main thread.
+In single threaded modle the drawback is that every method or an action is completed completly 
+and then only it goes to next method for execution
+
+for example in a program there is 3 methods suppose one method is takig more time then....
+its a great loss of time for other method...it would first complete the execution then only go 
+to the next method.
+
+To over come the process of single threaded modle we have been provided a concept of multi- threading.
+multi threading is nothing but ..under a process we have multiple thread.
+but if there are multiple thread in a code the operating system would allocate a time period to the threads
+so basically the multi threading works based on time sharing.
+
+the main idea of multi threadig is maximum ultilizing of cpu resources.
+
+suppose the we have 3 methods 
+test1()
+test2()
+test3()
+the 
+the time allocation for the execution would be like
+t1= 2sec 2 2 2 2 test1 
+t2 =2sec 2 2   2 test2
+t3= 2sec 2 2 2 2test3
+ 
+Example done in the code...CsharpPart14
+
+ //creating and calling the thread 
+	new Thread (Go).Start();     //Go is a static method
+if method is not static then we need to create an instace of that class and then call the thread
+for example
+	ThreadTest tt = new ThreadTest();   // Create a common instance
+  	  new Thread (tt.Go).Start();
+  	  tt.Go();
+
+
+there are two important constructor in thread 
+1. ThreadStart
+2. ParameteraizedThreadStart

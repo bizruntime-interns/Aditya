@@ -1,0 +1,53 @@
+Angular material
+
+1 . https://goo.gl/XmR6Li   - Form Design  
+2. https://goo.gl/3VQn29   - Firebase CRUD 
+3. https://goo.gl/5h59y5    - Material Data Table [ previous video ]
+4. https://goo.gl/NNf5sp   - Angular Material Popup [ this one ]
+5. https://goo.gl/pr8rs6     - Material Confirm Dialog [ next video]
+
+
+Angular 8 and Web Api
+
+https://www.youtube.com/watch?v=3BsTfc_pv_4
+
+
+Web Socket
+https://www.youtube.com/watch?v=2QS55uqcRrg&list=PLXLkA7FAishqfNPbgatwTULOQo3NMdkC8
+
+
+Socket
+https://www.youtube.com/watch?v=651yVDINPBY&list=PL3E98A39970606FF5&index=3&pbjreload=10
+
+
+Socket File Transfer
+
+https://www.youtube.com/watch?v=80hqVjVVZgE&list=PLLITw-6k1t1Yo0sWI6fmmPNCkDT3qC9Do&index=12
+
+
+Actor fabric
+https://www.c-sharpcorner.com/article/implementing-actor-model-in-azure-service-fabric/
+
+
+Library Management System - Step by step create in C Sharp - Part 01
+
+https://www.youtube.com/watch?v=3ZfgZleUNAc&list=PLCO0rf-qEqlbjpBIuytdkPawFZze_yi64&index=3
+
+Mini Projects
+https://www.youtube.com/watch?v=QORB9qbsC8M&list=PLLHxonS2m_S4T1pcUSAocI1uR1ZQ_bwCz
+
+
+Javascript
+https://www.youtube.com/watch?v=wc5k2AMPED0&list=PLwn8NJTlr6UrA3pXMJCQwfitIClFP0g0D
+https://www.youtube.com/watch?v=JaMCxVWtW58&list=PL-tHL4yGBdKvFjT0OF2-yq3at-cMt8qW_
+https://www.youtube.com/watch?v=RAyCSs5ilK0&list=PLxscslZaVbon15FrCrsyc04-6-lqfMpHU
+https://www.youtube.com/watch?v=2VJlzeEVL8A&list=PLhAYqyL8bdjy10dbfKoxnO4CXyGR9quCs
+https://www.youtube.com/watch?v=SrmShkVhKhU&list=PL7BTNHMTJY6jAH4-5X6vyD-qPqcMu2Q0u&index=2
+
+
+
+PHP
+https://www.youtube.com/watch?v=at19OmH2Bg4&list=PLu0W_9lII9aikXkRE0WxDt1vozo3hnmtR&index=1
+
+Angular 
+https://www.youtube.com/watch?v=X-vjBas_pTU&list=PLsjmv9aDmNDAN5adZxbGTlQHlgU2je7KE

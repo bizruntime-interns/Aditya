@@ -1,0 +1,8 @@
+ for cloning -> git clone "https://github.com/bizruntime-interns/Aditya.git"  -b  "master"
+>> after cloning navigate to created folder then  follow the cmds 
+ git add .
+ git config --global user.email "adityan9820@gmail.com"
+ git config --global user.password "Aditya88922"
+ git commit -m "name of the topic "
+ git push origin "branchname"
+adityAn9820 
