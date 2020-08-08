@@ -1,0 +1,1214 @@
+﻿
+
+
+
+constructor name and class name is always same. That is the difference between method and constructor.
+
+inheritance is basically like one object acquired the properties and behaviour of a parent object automtically.
+inheritance is a process of object reusability.
+
+derived class- A class which inherits the members of other class is called derived class
+base class - a class whose members are inherited is called as a base class.
+
+
+
+****************Real-world Example of Abstraction*******************
+
+
+Abstraction: It let you focus on what the object does instead of how it does.
+
+
+If somebody in your college tells you to fill in an application form, you will provide your details, like name, address, date of birth, which semester, 
+percentage you have etcetera.
+
+If some doctor gives you an application to fill in the details, you will provide the details, like name, address, date of birth, blood group, height and weight.
+
+See in the preceding example what is in common?
+
+Age, name and address, so you can create a class that consists of the common data. That is called an abstract class.
+
+assosiation follows has a relationship
+
+composition is something like when a parent object is deleted then the child objects are automatically deleted 
+example when a car is destroyed the automatically its engine is also destroyed.
+
+
+*********************Encapsulation**************************************
+
+Wrapping up a data member and a method together into a single unit (in other words class) is called Encapsulation.
+
+It is a protective container which prevents code and data to be assessed from the other the other code defined outside the container.
+
+
+************************INHERITANCE********************************
+IT is a process by which one object acquire the properties of the other object.
+In Inheritance the class which inherit the members of another class is called derived class and the class whose members are inherited is called base class.
+
+Advantage of Inheritace
+--Code Reusability
+members of the base class can be used again and again so there would be less writting of code.
+
+1. Single Level Inheritance
+2.Multi Level Inheritance
+When one class inherit another class and that is inherited further by another class is called multi level inheritance.
+
+using System;
+{
+class Animal
+	{
+	public void eat()
+	    {
+		public void Eat()
+	       {
+		   Console.writeline("Dog is eating");	
+	}
+}
+class DOG:Animal
+{
+	public void bark()
+	{
+	console.Writeline("")
+	}
+}
+public static void main()
+{
+	DOG d= new DOG();
+	d.EAT();
+	d.bark();
+}
+
+}
+
+************************************Polymorphism***********************************
+
+Runtime polymorphism is method overridding
+CompileTime polymorphism is method overloading.
+
+***************************************Collections**********************************************
+
+Collection- group of objects is called collection.
+
+3 types of collection 		//CODE IN CSharpPart10
+-System.Collections.Generic
+List +
+Stack + 
+Queue +
+LinkedList +
+HashSet +
+SortedSet +
+Dictionary +
+SortedDictionary + //it just Sorts the values according to the given keys. 
+SortedList +
+
+-System.Collections
+  ArrayList
+  Stack
+  Queue
+  Hashtable
+
+-System.Collections.Concurrent  //CSharpPart16
+BlockingCollection
+ConcurrentBag +
+ConcurrentStack +
+ConcurrentQueue +
+ConcurrentDictionary +
+Partitioner
+OrderablePartitioner
+
+var numbers = new List<int>() { 1,5,6,5,8,4,1,5}; //ListExample
+var names = new HashSet<string>() { "Aditya", "Aditya", "Sharma" }; //demonstation of hashset where it does not accepts duplicate values
+var decivalue = new SortedSet<double>() { 1.2, 5.6, 6.3, 0.3, 5 , 8, 4.2, 1, 5 }; //sortedset Example
+
+sorted set uses red black tree where as hashset uses hash table.
+
+int[] arr = new int[] {1,2,5,6,5};
+
+public Stack<string> Fnames = new Stack<string>();
+
+
+ var nodes = new LinkedList<string>();
+
+
+ public Dictionary<String, String> Employee = new Dictionary<string, string>();
+
+
+
+************************LINQ*******************************
+LinQ is a 'Language Integrated Query.' 
+LINQ provides the new way to manipulate the data, whether it is to or from the database or with an XML file or with a simple list of dynamic data.
+
+It is used to retrieve the data from different types of sources such as XML, docs, collections, ADO.Net DataSet, Web Service, MS SQL Server
+and other databases server.
+
+In C# or VB.NET, LINQ functionality can be achieved by importing the System.Linq namespace in our application.
+
+In LINQ there are 3 ways to write linq queries
+1. QuerySyntax
+2. methodSyntax
+3. MixedSyntax 
+
+
+
+
+1. LINQ to SQL
+
+	--it is a query language in .NET framework for working with relational database
+	i.e. SQL Server
+	--Linq to sql is not only quering the data but also allows to perform Insert
+	update and delete operation and its called as CRUD operation.
+	CRUD: CREATE READ UPDATE DELETE.
+	--Without Linq provider you can not execute linq queries.
+Difference between SQL and LINQ interacting with SQL Server
+
+SQL => SQL Server
+1. Runtime Syntax checking of SQL statements. 
+means When u write a sql based query in the application and send to the database using ADO.NET
+the the statemets of the query are verified with the database Engine.
+The drawback is that when you install your application on hundread machine then each time the 
+machine send the statments to the database the engine execute and verify each and every statement
+here we are putting a extra burden on the Database server.
+2. These are not Type Safe
+3. Debugging of sql statement is not possible.
+4. Code is a combination of Object oriented and Relational
+
+LINQ => SQL Server	
+1. Complie Time Syntax checking
+   Verification is done by the C# compiler itself.
+2. It is Type Safe
+	Imagine there is a colomn which accepts only integer values but u are passing a string value then 
+it would show error whereas in the SQL its not type safe. It doesnt matter if u pass a int value or a sting value.
+3. Debugging of linq statement is possible.
+4. Code is Pure object oriented code.
+
+Every table would be our class
+Every coloum would be a property of the class
+Every row or record would be instace of the class
+Stored procedures would be our methods.
+
+ORM(Object Relational Mapping) TO work with LINQ to SQL we need to convert all the object of database
+into the object oriented types and this process if called ORM.
+
+
+
+
+
+
+
+Synchronous And Asynchronous Programming
+
+Synchronous programming is the work that is done in a sequence.Task A gets done then Task B then TAsk C.
+Here the problem is no one else can do the work until unless the task D gets finished.
+
+The async keyword tell the compiler that new async functionallity will be used in the method
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+******************************AJAX Asynchronous Javascript and XML*************************************
+
+Asynchronous means exhange of data with the server at the background without refreshing the page is called 
+asynchronous.
+
+Multiple request are being sent to the server the client need not wait for the response and then send back
+the request this is the major application of Ajax.
+
+CallBack is a function which is used in ajax so that the server can send the response when it is ready with 
+the response.It is also a function which is initialized when the ready state changes.
+
+These are technologies used by AJAX
+	HTML -- HTML AND CSS ARE USED AT CLIENT SIDE	
+	CSS
+	JAVASCRIPT - this is used to make requests.
+	XML -- XML AND JSON are request format.
+	JSON
+	PHP-- Php is used at the server side.
+
+*********XMLhttpRequest Methods****************
+	
+    1.new XMLhttpRequest() //create a new XMLhttpRequest object
+			
+    2.abort() //cancle the current request
+	syntax: 
+		XMLhttpRequest.abort();
+
+	Example:
+		
+	var xhr = new XMLHttpRequest(),
+    	method = "GET",
+    	url = "https://developer.mozilla.org/";
+	
+	xhr.open(method, url, true);
+	xhr.send();
+	if (OH_NOES_WE_NEED_TO_CANCEL_RIGHT_NOW_OR_ELSE) 
+	{
+  		xhr.abort();
+	}
+	
+    3.getAllResponseHeaders() //return the complete set of header as a string.
+	
+	syntax: var headers = XMLHttpRequest.getAllResponseHeaders();
+	
+    4.getAllResponseHeader(headerName) //Returns the values of the specified http header.
+	--open(method,URL,async,userName,password) 
+
+		the method parameter can have the value of "GET" "POST" or "HEAD"
+    5.send(content) 
+		send the request to the server
+		used for GET method
+    6.send(string)
+		send the request for the server
+		used for post method
+    setRequestHeader(label, value) //sets the value of an HTTP request header. When using setRequestHeader(), 
+					you must call it after calling open(), but before calling send().
+
+*******************XMLhttpResponse Properties************************
+
+	1.onreadystatechange
+		//defines a function to be called when the readystate property changes.
+		syntax--XMLHttpRequest.onreadystatechange=callback;
+
+	readyState: Holds the status of the XMLHTTPREQUEST
+
+		0: request not initialized
+		1: Server connetion Established
+		2: XMLHttprequest received 
+		3: processing request
+		4: request finished and response ready
+
+	
+
+	2. responseText
+		//Return the response data as a string
+	3.responseXML
+		//Return the response data in the form of XML data
+	4.Status: 
+	    200 "ok"
+	    403 "forbidden"
+	    404 "Page not Found"
+
+		
+
+
+
+Steps to Implement Ajax
+
+1. Create an XMLHTTPREQUEST Object
+
+Syntax : variable = new XMLHttpRequest();
+	var xhttp = new XMLHttpRequest();   //xhttp is the variable name
+
+2.  The XML httpRequest object is used to exchange data with the server
+
+	Implementation: xhttp.open("GET","ajax_info.txt",true);
+
+	--> GET Signifies the method name
+	--> Signifies the URL
+	--> True parameter signifies that we are making a asynchronous method
+	if it is set to false the it is not an ajax request.
+
+3. Handle the response coming from the server
+
+4. SEND the request
+xhttp.send();		
+
+
+
+
+
+Delegate
+
+A delegate is a type safe function pointer.basically holds the reference for the method and then cAll it for execution
+Why is it called a function pointer?? because for the delegate we are passing a name of the method which you want to invoke..
+and when you call the delegate ..the delegate is pointing to the the method so it gets called automatically.
+The return type and the parameter for the methods and the delegates must be same always
+
+For exmaple if there is a case where you need to have many methods in a class with same parameter value ...
+then you need not call every method one by one. Simple bind all the method to the delegate and call it for once
+Always the signature of the method should match the signature of the delegate.
+
+Multi caste delegate will hold the refrence of more than one method
+
+Anonymous method a method without a name is anoymous method.
+usually not suggested to use ...use only if there is less amount of lines in an method.
+Advantage is lesser typing work.
+
+Lamda expressions were introduced to still simplfy the anonymous method
+
+no need to use the delegate keyword and no need to use the parameter type also
+=> the above symbol is the representation of the lamda expression
+
+
+******************************JSON************************************
+
+
+It is primarily used to transmit data between a server and web applications.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+*****************************XML*********************************************
+
+--XML DOM
+	"The W3C Document Object Model (DOM) is a platform and language-neutral interface that allows programs and scripts to dynamically access and update the content,
+		structure, and style of a document."
+
+The XML DOM is:
+
+A standard object model for XML
+A standard programming interface for XML
+Platform- and language-independent
+
+
+
+
+
+
+
+
+
+
+
+
+*************************JAVASCRIPT WEBSOCKET API***********************
+
+1. creating a instance of the web server
+ 	var server = new websocketserver("ws://localhost:8181");
+
+2. OnOpen Event
+	OnOpen Event means a new client has requested acess to join the server and his infomation 
+	must be added to the list and information must be stored related to him such as ip address etc.
+
+ server.Start(socket) => {
+ socket.onOpen = () => {
+ client.ADD(socket)
+}
+});
+
+
+3. OnClose Event
+Onclose event is raised whenever an client is disconnected and his information is 
+removed and updated into the list.
+
+socket.OnRemove = () => {
+ 
+	clients.Remove(socket)
+};
+
+4.  Send method()
+ The send method simply transmit the desiered data to the client.
+
+socket.OnMessage = () => {
+foreach(var client in clients) {
+client.send(client.ConnectionInfo.Id+"says"+message);
+}
+
+5.   OnMessage Event()
+ this Event occur when the client send an data to the server. The incomming messege can be displayed to the 
+client by just passing a paremeter called message.
+
+	socket.OnMessage = () => 
+	{
+	Console.WriteLine(Message);
+	}
+
+----API Appliction protocol Interface
+	it is a set of tool, routiens, protocols used in building software application.
+
+
+HTTP is a unidirectional protocol where the client always initiates a request.
+
+
+Advantage of Web socket is :
+
+1. Bidirectional
+       Http request are unidirectional protocol where the client always initiate the request 
+	the process and response.Where are in web socket the client and server both can send the message to each other. 
+2.Full Duplex
+ 	Web socket provide the flexability for both the client and server to interact with each other at the same time.
+	Either the server is talking to the client or the client is talkin to the server.
+3.Single TCP connection
+	USually TCP connection is initiated for an http request and terminated when the response is recieved.
+	whereas in web socket the http connection is upgraded by the upgraded funtion and the TCP doesnt get changed. 
+
+
+      Web Socket 				
+1.It is a message oriented 
+application protocol,which uses 
+tcp as tranportational layer	
+2.Web Socket allows bi-directional communication between 
+the client and the server
+          
+	TCP
+1.TCP (Transmission Control Protocol) is a type of protocol or 
+standard to transfer information over the Internet, such as 
+SSH, FTP, HTTP, etc.
+
+
+
+TCP:
+1.keep track of lost packet make sure that lost packets are re-sent
+2.Add sequence number to packet and reorder any packet which doesnt come in an order
+3.slower because all added fuctionalities
+4.Require more computer resources because it need to keep a track of all the ongoing sommunication session.
+
+UDP:
+1.doesnt not keep a track of lost packets
+2. Dont Care about packets arrival order
+3.Faster because it lack extra features
+4.Requires less computer resource.
+
+
+
+
+************TASK**************
+
+Why we need Tasks
+ 
+It can be used whenever you want to execute something in parallel. 
+Asynchronous implementation is easy in a task, using’ async’ and ‘await’ keywords.
+
+
+
+
+
+
+
+*******************Log4Net***********************
+All log messages written through log4net must be assigned one of the five following levels:
+
+    Debug. - 
+    Info.
+    Warn.
+    Error.
+    Fatal.
+
+there are 3 types of appender 
+Console
+File
+RollingFile
+
+//Using Console Appender
+
+*****App.config file*********
+<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+  <configSections>
+    <section name="log4net" type="log4net.Config.Log4NetConfigurationSectionHandler, log4net"/>
+  </configSections>
+  <log4net>
+    <root>
+      <level value="DEBUG" />
+      <appender-ref ref="MyAppender" />
+    </root>
+    <appender name="MyAppender" type="log4net.Appender.ConsoleAppender">
+      <layout type="log4net.Layout.PatternLayout">
+        <conversionPattern value="%date %thread %level %logger  %line - %message%newline" />
+      </layout>
+    </appender>
+  </log4net>
+  <startup>
+    <supportedRuntime version="v4.0" sku=".NETFramework,Version=v4.5" />
+  </startup>
+</configuration>
+
+
+*************In assemblyInfo.cs*****************
+
+[assembly: log4net.Config.XmlConfigurator(Watch = true)]
+
+
+*************In Program.cs*******************
+ 
+private static readonly log4net.ILog log = log4net.LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+
+
+*********************Rolling File Config*****************
+
+<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+  <configSections>
+    <section name="log4net" type="log4net.Config.Log4NetConfigurationSectionHandler, log4net" />
+  </configSections>
+
+  <log4net>
+    <appender name="RollingFileAppender" type="log4net.Appender.RollingFileAppender">
+      <file value="Test.txt" />
+      <appendToFile value="true" />
+      <rollingStyle value="Size" />
+      <maxSizeRollBackups value="20" />
+      <maximumFileSize value="10KB" />
+      <staticLogFileName value="true" />
+      <layout type="log4net.Layout.PatternLayout">
+        <conversionPattern value="%date [%thread] %-5level %logger [%property{NDC}] - %message%newline" />
+      </layout>
+    </appender>
+    <root>
+      <level value="DEBUG" />
+      <appender-ref ref="RollingFileAppender" />
+    </root>
+  </log4net>
+</configuration>
+
+*********Assembly line***************
+
+[assembly: log4net.Config.XmlConfigurator(ConfigFile = @"..\..\app.config", Watch = true)]
+
+
+
+*********AppConfig*************
+<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+  <startup>
+    <supportedRuntime version="v4.0" sku=".NETFramework,Version=v4.5" />
+  </startup>
+  <appSettings>
+    <add key="log4net.Config" value="log4.config"/>
+    <add key="log4net.Config.Watch" value="True"/>
+    <add key="log4net.Internal.Debug" value="False"/>
+  </appSettings>
+</configuration>
+
+
+
+
+*******************************SASS***********************************
+
+
+Systematically Awesome Style Sheet:Its extension of CSS
+
+
+NODE JS - It is a javascript runtime for executing javascript code
+
+
+
+
+
+*************************CSS*******************************
+Selectors
+
+1.	(.)(class Selector) - To select elements with a specific class, write a period (.) character, followed by the class name.
+2.	* (Universal Selector) - Every element in the body part would be affected by this selector.
+Grouping Selector - 
+	<!DOCTYPE html>
+	<html>
+	<head>
+	<style>
+	h1, h2, p {
+  	text-align: center;
+  	color: red;
+	}
+	</style>
+	</head>
+	<body>
+
+	<h1>Hello World!</h1>
+	<h2>Smaller heading!</h2>
+	<p>This is a paragraph.</p>
+
+	</body>
+	</html>
+**********************bootStrap******************************
+A content delivery network (CDN) refers to a geographically distributed group of servers which work together to provide fast delivery of Internet content.
+
+Grid classes
+For Mobile phones-----.col-xm-*
+For small devices-----.col-sm-*
+For medium devices-Desktops()------.col-md-*
+Large Device----.col-lg-*
+
+
+Elements
+--GRID BASIC
+1. <small></small>
+In Bootstrap the HTML <small> element is used to create a lighter, secondary text in any heading:
+
+2. <mark></mark>
+mark element is used to highlight the particular word.
+
+3.Abbreviation(abb)
+<p>The <abbr title="World Health Organization">WHO</abbr>
+
+5. <blockquote></blockquote>
+it is used for styling few set of line of statements.
+Footer is an element where at the end of the last statment u can give a footer short statement
+<footer>From WWF's website</footer>
+
+<blockquote class="blockquote-reverse"><blockquote>
+Here the content inside the blockquote goes toward the right side.
+
+6. the <dl> tag
+ <dl>
+    <dt>Coffee</dt>
+    <dd>- black hot drink</dd>
+    <dt>Milk</dt>
+    <dd>- white cold drink</dd>
+  </dl>     
+
+the above code would something look like this
+Coffee                //This is in bold
+- black hot drink
+Milk			 //This is in bold
+- white cold drink
+
+7. Buttons 
+it consist of different classes 
+.btn
+.btn-default
+.btn-primary
+.btn-sucess
+.btn-info
+.btn-warning
+.btn-danger
+.btn-link
+.btn-lg
+.btn-sm
+.btn-xs
+.btn-primary active
+.btn-primary diabled
+btn-group is a class where you can group many buttons.
+These are the different size of the button grouped together.
+"btn-group btn-group-lg">
+"btn-group btn-group-sm">
+"btn-group btn-group-xs">
+<div class="btn-group btn-group-justified"> This is used for grouping the buttons equally.
+
+8. Glyphicon
+it is a class where you find all the symbols used in the website like. the message icon,
+the search icon, the mail icon and etc.
+
+--- <span class="glyphicon glyphicon-envelope"></span>
+
+
+
+
+
+*********************************Temporal database*******************************
+A temporal database is generally understood as a database capable of supporting storage and reasoning of time-based data. 
+For example, medical applications may be able to benefit from temporal database support â€” a record of a patient's medical history 
+has little value unless the test results, e.g. the temperatures, are associated to the times at which they are valid, since we may wish 
+to do reasoning about the periods in time in which the patientâ€™s temperature changed.
+
+
+				row vs column database nosql
+
+1) data is stored serialized as row in row based system and serialized as columns in column based system.
+
+2) Access to data happens row by row in row based system, while it is accessed as columns in column oriented database
+
+3)row based system requires multiple disk reads as data is accessed row by row and hence normally takes longer, column based 
+systems require lesser disk reads and generally tend to be a little quicker
+
+4)row based databases generally suited best for OLTP( online transaction processing) ie transaction oriented applications, 
+column based structures best suited for OLAP( online analytical processing)ie providing analysis on data stored in databases
+
+5) Data compressing in row based database is generally not very effective and if implemented is done through sorting rows by 
+order of magnitude. Data compressing in column based structure is relatively easy as data within a column are uniform in nature 
+and most compression techniques make use of similarity of adjacent data to achieve compression.
+
+6) Storage size optimization limited due to reduced ability of data compression in row based systems, Column based systems provide 
+better storage size optimization capabilities.
+
+
+
+
+
+nosql is divided into 4 different data model part
+ 
+1. Document database : eg: MONGO DB
+MongoDB stores data in flexiable, JSON_LIKE document
+
+
+2. Key value Databse : eg: Redis database
+3. Wide Coloum database : eg: Cassandra by facebook
+4. Graph Base Database : eg: NEo4j
+
+
+ACID (atomicity, consistency, isolation, durability) properties are followed by RDBMS.
+
+For NOSQL We have a concept called.
+CAP
+c- consistency 
+ a.Strong - Always the user must get the updated data from the server side.
+ b.Eventual - 
+ c.week - If the updatition is occuring in a half day or one day then its week consistency.
+    
+A - Availabilty
+P - Partition tolerance - If one machine goes down...then can take data from other machine.
+
+NOSQL database will satisfy only 2 properties either CP or Ap or AC
+
+HBASE and MOngo DB supports Consistency and Partition tolerance.
+Casandra supports Availability and Partition Tolerance.
+RDBMS supports Availibilty and consistency.
+
+
+A key-value store provides the simplest possible data model and is exactly what the name suggests: 
+it's a storage system that stores values indexed by a key. You're limited to query by key and the values are opaque, 
+the store doesn't know anything about them. This allows very fast read and write operations (a simple disk access) 
+and I see this model as a kind of non volatile cache (i.e. well suited if you need fast accesses by key to long-lived data).
+
+A document-oriented database extends the previous model and values are stored in a structured format (a document, hence the name) 
+that the database can understand. 
+For example, a document could be a blog post and the comments and the tags stored in a denormalized way. Since the data are transparent, 
+the store can do more work (like indexing fields of the document) and you're not limited to query by key. As I hinted, such databases allows 
+to fetch an entire page's data with a single query and are well suited for content oriented applications 
+(which is why big sites like Facebook or Amazon like them).
+
+Other kinds of NoSQL databases include column-oriented stores, graph databases and even object databases. But this goes beyond the question.
+
+
+
+
+
+
+
+
+
+Tsql
+user defined function
+table variable 
+stored procedure 
+
+
+
+
+
+
+
+MSSQLSERVER
+
+DESKTOP-A0A8NOH
+
+
+
+*****************************************ADO.NET****************************************************
+
+
+ADO stands for ActiveX data object 
+
+ActiveX Framework is responsible for database communication
+
+
+2 Types of architecture are there
+--Connected architecture 
+Here first a fall a connection between 2 terminals must be established then we can perform the Operations 
+
+--disconnected
+
+This is nothing but ...If we have a case where u frequently want to acess the data from the same database then Store the complete database into ur machine.
+
+
+Few Key concepts in Entity Data Model
+
+1. Entity Type
+
+An entity type is a template for entity type instances. Each template contains the following information:
+
+A unique name. (Required.)
+
+An entity key defined by one or more properties. (Required.)
+
+Data in the form of properties. (Optional.)
+
+Navigation properties that allow for navigation from one end of an association to the other end. (Optional)
+
+In the same way that a class definition in a computer program is a template for instances of the class, an entity type is a template for entities.
+
+--An entity set is a collection of instances of a specific entity type.
+
+
+2. Assosiation Type
+
+An association type (also called an association) is the fundamental building block for describing relationships in the Entity Data Model (EDM).
+
+an association represents a relationship between two entity types (such as Customer and Order). In an application,
+ an instance of an association represents a specific association (such as an association between an instance of Customer and an instance of Order). 
+
+An association definition contains the following information:
+
+	- A unique name. (Required)
+
+	- Two association ends, one for each entity type in the relationship. (Required)
+
+		 Note
+
+			An association cannot represent a relationship among more than two entity types. An association can, however, define a self-relationship by specifying the same entity type for each of its association ends.
+
+
+******************************************ASP.NET CORE*****************************************
+
+ASP: ASP stands for Active Server Pages. It is a development framework used for building web pages. 
+ASP was introduced in 1998 by Microsoft as its first server side scripting language. 
+The file extension of ASP pages are .asp and are normally written in VBScript. 
+It is an old but still powerful tool for making dynamic web pages. ASP is a technology (much like PHP) for executing scripts on a web server.
+
+ASP.NET: ASP.NET was released in 2002 by Microsoft as a successor to ASP. 
+It is also a server-side web framework, open source, which is designed for the generation of dynamic web pages. 
+The file extension of ASP.NET pages are .aspx and are normally written in C# (C sharp). 
+The latest version of ASP.NET is ASP.NET 4.6.
+
+
+
+Fundamentals 
+
+1. Dependency injection 
+ `ASP.NET Core has a built in support for dependency.it basically makes apps eaiser to maintain and test
+
+To resolve the dependency we have 3 methods 
+1.Constructor dependency Injection
+2.method
+3.property 
+
+
+
+
+
+
+
+
+
+
+************************************************************JQuery******************************************************************
+
+Jquery is light weight javascript library.Write less do more.
+
+The purpose of Jquery is to make javascript much eaiser to use on ur website
+
+jquery also solved many complicated things from javascript like ajax call and dom manipulation
+
+CDN is content delivery network.A CDN is system of distributed Server that host resources such as Images, javasript etc.
+
+There are many javascript library but jquery is the most popular and extenable library.
+
+$ sign is to difine/assess jquey
+
+eg:
+
+$(this).hide() hide all the current element.
+
+$("p").hide() hide all the elements in p.
+
+$(".test").hide() hide all the elements from the test class 
+
+$("#test").hide() hide the elements with id=test   
+
+
+--Even shorter method for document ready event 
+
+	$(function{
+
+	});
+
+ selectors in jQuery start with the dollar sign and parentheses: $().
+Selectors
+
+   . dot -> is a selector for class
+  # -> selector for an id
+
+
+value Selector
+
+1.Attribute Equal Selector
+2.Attribute Not Equal Selector
+3.Attribute Contain Selector
+4.Attribute Contain word Selector
+5.Attribute Contain Prefix Selector
+6.Attribute Start with Selector
+7.Attribute End with Selector
+
+*****************************************TypeScript************************************************
+
+
+Variable declaration 
+Build in Data Types
+  -Number 
+  -String 
+  -Boolean 
+  -void 
+  -Null 
+  -Undefined 
+Type Assertion
+ -Used to access the intellicence in the editor
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+***********************************************ASP.NET web api*************************************************************
+
+API- Application programming interface
+
+Most common usage of using APi is building RestFull services 
+
+
+RESTFULL serivices -
+REST stands for representational State Transfer.
+Rest is a architectural pattern for creating an api that uses an HTTP 
+
+The problem with WCF is that a lot of configuration is reqired to turn a wcf service into a WCF service 
+
+the best option to create a restfull service is asp.net api
+
+.NEt wants the protocols to be TCP and message format as binary for this scene WCF is the r8 choice 
+
+
+
+
+
+
+
+
+**********************************Angular********************************************
+
+Went through Entity framework core from msdn.
+To create a project we write ng create project_name
+To create a component command is=> ng g c Employee
+To create a module commad is => ng g module Company
+To creaet a service command is => ng generate service servicename
+--In declaration Section of app.module.ts we declare all the components, pipes , directives.
+--In Imports section whatever modules we create we keep that into this import section ...in app.modules file
+--In providers we keep our service.
+
+
+
+Decorators 
+
+--Decorators are functions that return functions.
+These function supply metaData to Angular about a particular class, property, value or method.
+
+Decorator are of 4 types 
+--class Decorators eg: @Components , @Ngmodules
+--Property Decorators eg: @Input and @Output Decorator 
+--Method Decorator : for method inside classes @HostListener 
+--Parameter Decorators : for parameter inside class contructor, eg: @Inject 
+
+
+Components 
+--component are basis building block of angular, which means angular application is collection of components and one components are responsible 
+for handling one view.It encapsulates the data,Html markup and the logics for a view. You can create as many components you required.
+--components is nothing but a simple typescript class,which contains the folling things 
+--typescript class 
+--HTML templete 
+--Component decorators with metadata
+--When we create a components it get defined in Ngmodule
+
+
+Directives
+Direvtive are the elememt which change the appearance and behaviour of the DOM elements.There are 3 types of Directives
+1) Components 
+2) Structural 
+3) Attributes 
+
+Structural Directive are basically responsiable for HTML layot.There are 3 strucural directives availabe in angualar
+1) nglf
+2) ngFor
+3) ngSwitch
+
+Attribute Directive is a way to modify the appeareance of the dom elememts and components.There are 2 build in attribute directive in angular 
+1) ngStyle
+	Using ngStyle we can change the properties of the elements dynamically 
+2) ngClass
+3) Data Binding
+	DataBinding means to bind the view with components field.
+DataBinding = communincation 
+Components passes data to templet view and even templet passes data to component
+
+Binding is of 3 types Source to view , view to Source and view to source and source to view.
+
+
+4) Interpolation in angular 
+using {{}}
+5) Property Binding in Angular 8 
+	Binding is done using an array. we can bind an image also using property binding.
+6) Attribute Binding in Angular 8
+	attribute binding is the binding of attributes of dom elements in the html.
+7) Event Binding in Angular 8 
+8) Two way Data binding in Angular 8 
+9) pipes in angular 8 
+10) Parameterized inn Angualar 8
+11) Router
+	When a user navigate to a page, Angular Router performs the following steps:
+	Step 1 : Parse the URL
+		In this process the angular router takes the browser URL and parse it as a URL tree 
+
+
+
+
+*******************************************************Angular-Material*********************************************************
+Typography class
+
+  -To display text with different size we have classes like 
+    --mat-display-4
+    --mat-display-3
+    --mat-display-2
+    --mat-display-1
+
+     --mat-headline      //This is heading for h1
+     --mat-title	//This is heading for h2 and is bold     
+     --mat-subheading-2    //This is heading for h3
+     --mat-subheading-1    //This is heading for h4
+
+for body content of the page we have 
+
+	 --mat-body-1
+	 --mat-body-2 	//This is bold text
+	 --mat-caption 
+
+Buttons
+
+--there are four different types of button 
+	<button mat-button> click me </button>
+	<button mat-raised-button> click me </button>
+	<button mat-flat-button> click me </button>
+	<button mat-stroked-button> click me </button>
+
+
+we have few circular buttons
+	<button mat-icon-button> Icon </button>
+	<button mat-fab> fab </button>
+	<button mat-mini-fab> MiniFab</button>
+
+Button-color
+
+	<button color="primary" mat-button> Primary </button>
+	<button color="accent" mat-button> accent</button>
+	<button color="warn" disableRipple mat-button> warn </button>
+
+
+	<button color="primary" mat-raised-button> Primary </button>
+	<button color="accent" mat-raised-button> accent</button>
+	<button color="warn" mat-raised-button> warn </button>
+
+
+
+
+Angular Material
+ 1)Badges
+ 2)Process Spinner
+ 3)sidenav
+   3.1)Opening and closing a sidenav
+   3.2)Changning the side nav behaviour 
+   3.3)Resizing an open sidenav
+   3.4)setting the sidenav size
+   3.5)Fixed position
+ 4)Menu
+   4.1)Icons
+   4.2)Customizing menu position
+   4.3)Nested menu
+   4.4)Passing in data to a menu
+   4.5)keyborad interaction
+ 5)Toolbar
+   5.1)Single Row
+
+Apache Ignite
+
+Apache Ignite is an open source memory-centric distributed platform. We can use it as a database, a caching system or for the in-memory data processing.
+Apache ignite is a distributed and scalable caching and database platform.
+it is called distributed data grid coz it can be used as data grid , compute grid and service grid and many others.
+In the architecture of apache ignite in the center we have memory centric stroage is a distributed data storage layer which is acid compliance.
+memory centric stroage also provide different api to interact with data.api include sql api.we also had key value api so you can use ignite as a data grid or as a cacheing layer
+or as a NOsql database.
+
+connectivity to the database can be done through different means
+
+1. JDBC is: Java Database Connectivity is a Java API for connecting programs written in Java to the data in relational databases. ... 
+ODBC is used between applications JDBC is used by Java programmers to connect to databases With a small "bridge" program, you can 
+use the JDBC interface to access ODBC- accessible databases.
+
+2. An ODBC driver uses the Open Database Connectivity (ODBC) interface by Microsoft that allows applications to access data in database management systems (DBMS) 
+using SQL as a standard for accessing the data. ... ODBC permits maximum interoperability, which means a single application can access different DBMS.
+
+3. Rest :A RESTful API is an application program interface (API) that uses HTTP requests to GET, PUT, POST and DELETE data. 
+   An API for a website is code that allows two software programs to communicate with each other.
+
+4. Java, .Net and C++ API's
+
+DDL:
+DDL is Data Definition Language which is used to define data structures. For example: create table, alter table are instructions in SQL.
+
+DML:
+DML is Data Manipulation Language which is used to manipulate data itself. For example: insert, update, delete are instructions in SQL. 
+
+Basically DDL are the command like create database,delete,update and DML are the queries which is used to manipuate the data. 
+
+Architecture 
+
+Durable Memory
+
+Ignite's durable memory component treats RAM not just as a caching layer but as a complete fully functional storage layer. 
+This means that users can turn the persistence on and off as needed. If the persistence is off, then Ignite can act as a 
+distributed in-memory database or in-memory data grid, depending on whether you prefer to use SQL or key-value APIs. 
+If the persistence is turned on, then Ignite becomes a distributed, horizontally scalable database that guarantees 
+full data consistency and is resilient to full cluster failures.
+
+Ignite Persistence
+
+Ignite Native Persistence is a distributed, ACID, and SQL-compliant disk store that transparently integrates with 
+Ignite's Durable Memory as an optional disk layer storing data and indexes on SSD, Flash, 3D XPoint, and other types of non-volatile storages.
+With the Ignite Persistence enabled, you no longer need to keep all the data and indexes in memory or warm it up after a node
+or cluster restart because the Durable Memory is tightly coupled with persistence and treats it as a secondary memory tier. 
+This implies that if a subset of data or an index is missing in RAM, the Durable Memory will take it from the disk.
+
+
+Data storage configuration
+
+first property we have data storage configuration. Datastorage can consist of multiple data region and each data region can have multiple data cache or multiple tables. 
+
+
+https://developers.redhat.com/blog/2017/06/30/5-things-to-know-about-reactive-programming/
+
+
+https://gist.github.com/staltz/868e7e9bc2a7b8c1f754
+
+https://www.developer.com/design/down-and-dirty-understanding-the-actor-model.html
+
+
+
+
+
+
+
+
+************************React*****************************
+
+It is a javascript library.It is not a framework and it focus on UI. It is maintained by facebook
+ 
